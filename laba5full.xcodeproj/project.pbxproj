@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		439D570D2DD1D43F00A1E9D0 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 439D570C2DD1D43900A1E9D0 /* functions.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		439D56FC2DD1D3CD00A1E9D0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,7 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		439D56FE2DD1D3CD00A1E9D0 /* laba5full */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = laba5full; sourceTree = BUILT_PRODUCTS_DIR; };
+		439D570B2DD1D42B00A1E9D0 /* laba5full */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = laba5full; path = /Users/vanyaaleinik/Documents/laba5full/build/Debug/laba5full; sourceTree = "<absolute>"; };
+		439D570C2DD1D43900A1E9D0 /* functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,16 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				439D57002DD1D3CD00A1E9D0 /* laba5full */,
-				439D56FF2DD1D3CD00A1E9D0 /* Products */,
+				439D570C2DD1D43900A1E9D0 /* functions.c */,
 			);
-			sourceTree = "<group>";
-		};
-		439D56FF2DD1D3CD00A1E9D0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				439D56FE2DD1D3CD00A1E9D0 /* laba5full */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +76,7 @@
 			packageProductDependencies = (
 			);
 			productName = laba5full;
-			productReference = 439D56FE2DD1D3CD00A1E9D0 /* laba5full */;
+			productReference = 439D570B2DD1D42B00A1E9D0 /* laba5full */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -93,6 +90,7 @@
 				TargetAttributes = {
 					439D56FD2DD1D3CD00A1E9D0 = {
 						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
 					};
 				};
 			};
@@ -106,7 +104,7 @@
 			mainGroup = 439D56F52DD1D3CD00A1E9D0;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 439D56FF2DD1D3CD00A1E9D0 /* Products */;
+			productRefGroup = 439D56F52DD1D3CD00A1E9D0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -120,6 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439D570D2DD1D43F00A1E9D0 /* functions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,16 +243,21 @@
 		439D57062DD1D3CD00A1E9D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		439D57072DD1D3CD00A1E9D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
